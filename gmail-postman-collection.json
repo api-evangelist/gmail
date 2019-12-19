@@ -1,0 +1,3540 @@
+{
+    "id": "e57e4c1a6b3f6c46885104379cd0b6c7",
+    "name": "Gmail",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "c217f43a25d076bd62a185db7dab9942",
+            "name": "Get User Drafts",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts",
+            "description": "Lists the drafts in the user's mailbox.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "includeSpamTrash",
+                    "description": "Include drafts from SPAM and TRASH in the results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxResults",
+                    "description": "Maximum number of drafts to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageToken",
+                    "description": "Page token to retrieve a specific page of results in the list.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Only return draft messages matching the specified query. Supports the same query format as the Gmail search box. For example, \"from:someuser@example.com rfc822msgid: is:unread\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "b02e370755dedf914d7ae64215d66c97",
+            "name": "Parameters User Drafts",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "9761bb64ee9cc9c1d7341d06cf6e9fd2",
+            "name": "Post User Drafts",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts",
+            "description": "Creates a new draft with the DRAFT label.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "e57fecf1577a03e4c088df1499b46c7a",
+            "name": "Parameters User Drafts Send",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts\/send",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "f0887132f5698cde7838622173962b43",
+            "name": "Post User Drafts Send",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts\/send",
+            "description": "Sends the specified, existing draft to the recipients in the To, Cc, and Bcc headers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4ac2ec24b676b6097c3accc12b87c968",
+            "name": "Delete User Draft",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts\/{id}",
+            "description": "Immediately and permanently deletes the specified draft. Does not simply trash it.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "c14bc3e7b21ad681cab21aab7168bc4b",
+            "name": "Get User Draft",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts\/{id}",
+            "description": "Gets the specified draft.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "The format to return the draft in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "a15ab3fd2cbaa44b35723c9d2458caa1",
+            "name": "Parameters User Draft",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8ff81998e2d29d492d6c6e7602a0f84",
+            "name": "Put User Draft",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/drafts\/{id}",
+            "description": "Replaces a draft's content.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "67108b8a9d48c0101ab7bb170a31be13",
+            "name": "Get User History",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/history",
+            "description": "Lists the history of all changes to the given mailbox. History results are returned in chronological order (increasing historyId).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "historyTypes",
+                    "description": "History types to be returned by the function",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "labelId",
+                    "description": "Only return messages with a label matching the ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxResults",
+                    "description": "Maximum number of drafts to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageToken",
+                    "description": "Page token to retrieve a specific page of results in the list.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startHistoryId",
+                    "description": "Required. Returns history records after the specified startHistoryId. The supplied startHistoryId should be obtained from the historyId of a message, thread, or previous list response. History IDs increase chronologically but are not contiguous with random gaps in between valid IDs. Supplying an invalid or out of date startHistoryId typically returns an HTTP 404 error code. A historyId is typically valid for at least a week, but in some rare circumstances may be valid for only a few hours. If yo",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "cdefa65fa1ff24e429719484971c64f9",
+            "name": "Parameters User History",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/history",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "145dd1db283c71fdac2e3402f356ccf0",
+            "name": "Get User Labels",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels",
+            "description": "Lists all labels in the user's mailbox.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "93a28104e0375360c8b252bef05de18c",
+            "name": "Parameters User Labels",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "dec888bf5f4a644109b711656206cf5b",
+            "name": "Post User Labels",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels",
+            "description": "Creates a new label.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "61fb45341b553a6202d8eaa7e5e07e62",
+            "name": "Delete User Label",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels\/{id}",
+            "description": "Immediately and permanently deletes the specified label and removes it from any messages and threads that it is applied to.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "7c776b58f8ae53af3c032b82dc861920",
+            "name": "Get User Label",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels\/{id}",
+            "description": "Gets the specified label.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "9518454a0284344cb7c549f52794ccea",
+            "name": "Parameters User Label",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "6e963c63c06cc26c11edc005bd8c28fa",
+            "name": "Patch User Label",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels\/{id}",
+            "description": "Updates the specified label. This method supports patch semantics.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "8cb1cf4c3da124b3c845e9680a4973d3",
+            "name": "Put User Label",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/labels\/{id}",
+            "description": "Updates the specified label.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "58b8f6e7cb94432f51990c9699b1ef87",
+            "name": "Get User Messages",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages",
+            "description": "Lists the messages in the user's mailbox.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "includeSpamTrash",
+                    "description": "Include drafts from SPAM and TRASH in the results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "labelIds",
+                    "description": "Only return messages with labels that match all of the specified label IDs.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxResults",
+                    "description": "Maximum number of drafts to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageToken",
+                    "description": "Page token to retrieve a specific page of results in the list.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Only return draft messages matching the specified query. Supports the same query format as the Gmail search box. For example, \"from:someuser@example.com rfc822msgid: is:unread\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "109b60dce813e56a3a8865a4357eba15",
+            "name": "Parameters User Messages",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "03999010de6f46b94b94925fad0ef6fd",
+            "name": "Post User Messages",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages",
+            "description": "Directly inserts a message into only this user's mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "deleted",
+                    "description": "Mark the email as permanently deleted (not TRASH) and only visible in Google Vault to a Vault administrator. Only used for G Suite accounts.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "internalDateSource",
+                    "description": "Source for Gmail's internal date of the message.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d4f3cd7f1821b729b2cb532c3043fa5",
+            "name": "Parameters User Messages Batchdelete",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/batchDelete",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "c92201a8f88998aa959cd7e68a22fa93",
+            "name": "Post User Messages Batchdelete",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/batchDelete",
+            "description": "Deletes many messages by message ID. Provides no guarantees that messages were not already deleted or even existed at all.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "a82c6f5cd8f33173bf7f5a62052d0fe4",
+            "name": "Parameters User Messages Batchmodify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/batchModify",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "453756fea5c6faf770664e7053f3f565",
+            "name": "Post User Messages Batchmodify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/batchModify",
+            "description": "Modifies the labels on the specified messages.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "d3f4f2828e43bc35619b5fa9916413bc",
+            "name": "Parameters User Messages Import",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/import",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4519314002c8afdcbccb232734538cf",
+            "name": "Post User Messages Import",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/import",
+            "description": "Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "deleted",
+                    "description": "Mark the email as permanently deleted (not TRASH) and only visible in Google Vault to a Vault administrator. Only used for G Suite accounts.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "internalDateSource",
+                    "description": "Source for Gmail's internal date of the message.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "neverMarkSpam",
+                    "description": "Ignore the Gmail spam classifier decision and never mark this email as SPAM in the mailbox.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "processForCalendar",
+                    "description": "Process calendar invites in the email and add any extracted meetings to the Google Calendar for this user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "57aae90103cbfd78322bbdd2b1351080",
+            "name": "Parameters User Messages Send",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/send",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1dfb004c0d48cb768efe3cdd6c0b7413",
+            "name": "Post User Messages Send",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/send",
+            "description": "Sends the specified message to the recipients in the To, Cc, and Bcc headers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "86bdd791d684ff3388167677bc2bdf71",
+            "name": "Delete User Message",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}",
+            "description": "Immediately and permanently deletes the specified message. This operation cannot be undone. Prefer messages.trash instead.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a3c4cf2c77988b110d9f823131b1496",
+            "name": "Get User Message",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}",
+            "description": "Gets the specified message.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "The format to return the draft in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "metadataHeaders",
+                    "description": "When given and format is METADATA, only include headers specified.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4bf308d6aca9453e17f5568fa8ff15e6",
+            "name": "Parameters User Message",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "24c16573a14ad253fd75e3a50ba4a4d7",
+            "name": "Parameters User Message Modify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}\/modify",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "277950e5529dbc389453619a3f6c9116",
+            "name": "Post User Message Modify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}\/modify",
+            "description": "Modifies the labels on the specified message.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "81cb6c0be213c8303fe3df6d9231bf6f",
+            "name": "Parameters User Message Trash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}\/trash",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "eed02cf0f4a2f10e85d99712aedea9df",
+            "name": "Post User Message Trash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}\/trash",
+            "description": "Moves the specified message to the trash.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "0478eab349666accc3f9235af21b824d",
+            "name": "Parameters User Message Untrash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}\/untrash",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "f9b3a10dfe903a82164fcacd97613b48",
+            "name": "Post User Message Untrash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{id}\/untrash",
+            "description": "Removes the specified message from the trash.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4e99e18625ab21e2119bedccaa1143c5",
+            "name": "Get User Messages Messageid Attachment",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{messageId}\/attachments\/{id}",
+            "description": "Gets the specified message attachment.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "messageId",
+                    "description": "The ID of the message containing the attachment.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "91984270e63d34404ef1f70b7027ef39",
+            "name": "Parameters User Messages Messageid Attachment",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/messages\/{messageId}\/attachments\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "a8b0c18a83e0b384d4cf36cb410b0020",
+            "name": "Get User Profile",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/profile",
+            "description": "Gets the current user's Gmail profile.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "d79fa7928d488fe6098da1bff480bdf5",
+            "name": "Parameters User Profile",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/profile",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4753a37c8ecac50af354f43c221644f6",
+            "name": "Get User Settings Autoforwarding",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/autoForwarding",
+            "description": "Gets the auto-forwarding setting for the specified account.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "84bbb59fab8e34f0d35dff62ce4c8389",
+            "name": "Parameters User Settings Autoforwarding",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/autoForwarding",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "96add83b96591019b5f95d51976e37e5",
+            "name": "Put User Settings Autoforwarding",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/autoForwarding",
+            "description": "Updates the auto-forwarding setting for the specified account. A verified forwarding address must be specified when auto-forwarding is enabled.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9089fd5371f00d7bb5cd1edb6289623",
+            "name": "Get User Settings Delegates",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/delegates",
+            "description": "Lists the delegates for the specified account.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "e68d54770c3ae2d6bfc61f22fcb03d1c",
+            "name": "Parameters User Settings Delegates",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/delegates",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "82093e1316683be05cc45567c7b7d380",
+            "name": "Post User Settings Delegates",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/delegates",
+            "description": "Adds a delegate with its verification status set directly to accepted, without sending any verification email. The delegate user must be a member of the same G Suite organization as the delegator user.\n\nGmail imposes limtations on the number of delegates and delegators each user in a G Suite organization can have. These limits depend on your organization, but in general each user can have up to 25 delegates and up to 10 delegators.\n\nNote that a delegate user must be referred to by their primary ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ca1d54b4c9511e1c0dca823dec9d72f",
+            "name": "Delete User Settings Delegates",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/delegates\/{delegateEmail}",
+            "description": "Removes the specified delegate (which can be of any verification status), and revokes any verification that may have been required for using it.\n\nNote that a delegate user must be referred to by their primary email address, and not an email alias.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "delegateEmail",
+                    "description": "The email address of the user to be removed as a delegate.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "81ab6cf906cd436677b50c8d928764f3",
+            "name": "Get User Settings Delegate",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/delegates\/{delegateEmail}",
+            "description": "Gets the specified delegate.\n\nNote that a delegate user must be referred to by their primary email address, and not an email alias.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "delegateEmail",
+                    "description": "The email address of the user to be removed as a delegate.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "db0522076f7460ce71689364e0d97b32",
+            "name": "Parameters User Settings Delegates Delegateemail",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/delegates\/{delegateEmail}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "7e376738f8225238e71b9d01988d728e",
+            "name": "Get User Settings Filters",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/filters",
+            "description": "Lists the message filters of a Gmail user.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "edec7e564ddc088a5ea2e45276ac1db4",
+            "name": "Parameters User Settings Filters",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/filters",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "018176c80707ef0419df698d717448dd",
+            "name": "Post User Settings Filters",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/filters",
+            "description": "Creates a filter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "572b0a528da2592f907764d4050f0903",
+            "name": "Delete User Settings Filter",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/filters\/{id}",
+            "description": "Deletes a filter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7098ae199ce0312a1786a0dbbdb505a",
+            "name": "Get User Settings Filter",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/filters\/{id}",
+            "description": "Gets a filter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4057ecc1e158db257d34bdcaab81d028",
+            "name": "Parameters User Settings Filter",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/filters\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc5d57639f73f3bd03eb9b846fe3fc3b",
+            "name": "Get User Settings Forwarding Addresses",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/forwardingAddresses",
+            "description": "Lists the forwarding addresses for the specified account.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "385d03b8f6a30ea114146a670a063a02",
+            "name": "Parameters User Settings Forwarding Addresses",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/forwardingAddresses",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "6d125d1e7b91a8912e3eef08328c06e3",
+            "name": "Post User Settings Forwarding Addresses",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/forwardingAddresses",
+            "description": "Creates a forwarding address. If ownership verification is required, a message will be sent to the recipient and the resource's verification status will be set to pending; otherwise, the resource will be created with verification status set to accepted.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "dea0ede42e8ea745cea1e01b372f4853",
+            "name": "Delete User Settings Forwarding Addresses Forwarding Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/forwardingAddresses\/{forwardingEmail}",
+            "description": "Deletes the specified forwarding address and revokes any verification that may have been required.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "forwardingEmail",
+                    "description": "The forwarding address to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "3081a4ce0f6a8a26d0936111b3af84ed",
+            "name": "Get User Settings Forwarding Addresses Forwarding Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/forwardingAddresses\/{forwardingEmail}",
+            "description": "Gets the specified forwarding address.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "forwardingEmail",
+                    "description": "The forwarding address to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c53cecfff80b370ed802f5e8eefee45",
+            "name": "Parameters User Settings Forwarding Addresses Forwarding Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/forwardingAddresses\/{forwardingEmail}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "40fe4a05732943a521530ba9eb297420",
+            "name": "Get User Settings Imap",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/imap",
+            "description": "Gets IMAP settings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "a03447214910567b13f2e3aa4548472f",
+            "name": "Parameters User Settings Imap",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/imap",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "fde4d544a5ed840bd54caf1af79adf85",
+            "name": "Put User Settings Imap",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/imap",
+            "description": "Updates IMAP settings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1fc977641d1fb1c3ce2d1bc1c1cf097c",
+            "name": "Get User Settings Language",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/language",
+            "description": "Gets language settings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "76c3bc824d1573569353269e7b7263c1",
+            "name": "Parameters User Settings Language",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/language",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4d465f72616fc63e375d8ca90b71902",
+            "name": "Put User Settings Language",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/language",
+            "description": "Updates language settings.\n\nIf successful, the return object contains the displayLanguage that was saved for the user, which may differ from the value passed into the request. This is because the requested displayLanguage may not be directly supported by Gmail but have a close variant that is, and so the variant may be chosen and saved instead.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "58a45c10aa00d3a3b246fff54306b7e6",
+            "name": "Get User Settings Pop",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/pop",
+            "description": "Gets POP settings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c3fbea8483fee350f41785302cf5887",
+            "name": "Parameters User Settings Pop",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/pop",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "0b1edd618dd93d95f6f6068b315c9c5a",
+            "name": "Put User Settings Pop",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/pop",
+            "description": "Updates POP settings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "7ce0d9fd7e411c4b978d31bd49ce2fdf",
+            "name": "Get User Settings Send As",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs",
+            "description": "Lists the send-as aliases for the specified account. The result includes the primary send-as address associated with the account as well as any custom \"from\" aliases.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e7a3e1b62ceee12e6c66426a3397211",
+            "name": "Parameters User Settings Send As",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d2ffd4f602494beb29437b7454983c0",
+            "name": "Post User Settings Send As",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs",
+            "description": "Creates a custom \"from\" send-as alias. If an SMTP MSA is specified, Gmail will attempt to connect to the SMTP service to validate the configuration before creating the alias. If ownership verification is required for the alias, a message will be sent to the email address and the resource's verification status will be set to pending; otherwise, the resource will be created with verification status set to accepted. If a signature is provided, Gmail will sanitize the HTML before saving it with the ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "9a9deb8b1a14cd09eff34fba931d0e42",
+            "name": "Delete User Settings Send As Send As Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}",
+            "description": "Deletes the specified send-as alias. Revokes any verification that may have been required for using it.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d8cdbdeeb67f87670af20ab7b2e6001",
+            "name": "Get User Settings Send As Send As Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}",
+            "description": "Gets the specified send-as alias. Fails with an HTTP 404 error if the specified address is not a member of the collection.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "0f284b10c049d968683ddd19a6826033",
+            "name": "Parameters User Settings Send As Send As Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "0a33cf9b28bd94eaf7e998e13cc52081",
+            "name": "Patch User Settings Send As Send As Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}",
+            "description": "Updates a send-as alias. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.\n\nAddresses other than the primary address for the account can only be updated by service account clients that have been delegated domain-wide authority. This method supports patch semantics.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "b3ce152a080d194cac66bbc7d6cb31bb",
+            "name": "Put User Settings Send As Send As Email",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}",
+            "description": "Updates a send-as alias. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.\n\nAddresses other than the primary address for the account can only be updated by service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1499e13f43edcda36ae2005f655083f8",
+            "name": "Get User Settings Send As Send As Email Smimeinfo",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo",
+            "description": "Lists S\/MIME configs for the specified send-as alias.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "6f96074b00c9c4cb67614d29c1f5534e",
+            "name": "Parameters User Settings Send As Send As Email Smimeinfo",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f60900ba2142f5a7591b37a9a1bb01a",
+            "name": "Post User Settings Send As Send As Email Smimeinfo",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo",
+            "description": "Insert (upload) the given S\/MIME config for the specified send-as alias. Note that pkcs12 format is required for the key.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "69e577e10e1dbc518b86fbaa76426b6c",
+            "name": "Delete User Settings Send As Send As Email Smimeinfo Id",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo\/{id}",
+            "description": "Deletes the specified S\/MIME config for the specified send-as alias.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "fe0d60758fe1c898c25e4e0db8a084c7",
+            "name": "Get User Settings Send As Send As Email Smimeinfo Id",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo\/{id}",
+            "description": "Gets the specified S\/MIME config for the specified send-as alias.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "cf0dd6113450b7e965839b5206e572d9",
+            "name": "Parameters User Settings Send As Send As Email Smimeinfo Id",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "21f5ed8cc425fb3178d3d08f2296ab5f",
+            "name": "Parameters User Settings Send As Send As Email Smimeinfo Id Setdefault",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo\/{id}\/setDefault",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "efef7c8ae7ea8c4ecbac07402a42f10e",
+            "name": "Post User Settings Send As Send As Email Smimeinfo Id Setdefault",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/smimeInfo\/{id}\/setDefault",
+            "description": "Sets the default S\/MIME config for the specified send-as alias.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a6b05c0d8348e1268635d652c011f7c",
+            "name": "Parameters User Settings Send As Send As Email Verify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/verify",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "dad73c445844a458abbbaf7329130d70",
+            "name": "Post User Settings Send As Send As Email Verify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/sendAs\/{sendAsEmail}\/verify",
+            "description": "Sends a verification email to the specified send-as alias address. The verification status must be pending.\n\nThis method is only available to service account clients that have been delegated domain-wide authority.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sendAsEmail",
+                    "description": "The send-as alias to be deleted.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b1fd99e9babaebe74fa177a5e798823",
+            "name": "Get User Settings Vacation",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/vacation",
+            "description": "Gets vacation responder settings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae028be6e1e4ea6aace16069493c78c9",
+            "name": "Parameters User Settings Vacation",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/vacation",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "847c092b9342d12008df60ecd5a8e88e",
+            "name": "Put User Settings Vacation",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/settings\/vacation",
+            "description": "Updates vacation responder settings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b31c461a0c6e7b055a172c3e280fca4",
+            "name": "Parameters User Stop",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/stop",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "d62bc46e0e23ca7c87c4172383e2fb2b",
+            "name": "Post User Stop",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/stop",
+            "description": "Stop receiving push notifications for the given user mailbox.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1de891f7c50276e2ff6e050238ec182c",
+            "name": "Get User Threads",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads",
+            "description": "Lists the threads in the user's mailbox.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "includeSpamTrash",
+                    "description": "Include drafts from SPAM and TRASH in the results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "labelIds",
+                    "description": "Only return messages with labels that match all of the specified label IDs.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxResults",
+                    "description": "Maximum number of drafts to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageToken",
+                    "description": "Page token to retrieve a specific page of results in the list.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Only return draft messages matching the specified query. Supports the same query format as the Gmail search box. For example, \"from:someuser@example.com rfc822msgid: is:unread\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1126b69c388f76e54c015b248522184f",
+            "name": "Parameters User Threads",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "46d0a421472086084b33ff2edc641925",
+            "name": "Delete User Thread",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}",
+            "description": "Immediately and permanently deletes the specified thread. This operation cannot be undone. Prefer threads.trash instead.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5daf6ea69b4f8c20875c948a3d967d2",
+            "name": "Get User Thread",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}",
+            "description": "Gets the specified thread.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "format",
+                    "description": "The format to return the draft in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "metadataHeaders",
+                    "description": "When given and format is METADATA, only include headers specified.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "13ad3876f4d0befa9cae6983e9e71ead",
+            "name": "Parameters User Thread",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd3f6ac9290932acafb54ebf57060407",
+            "name": "Parameters User Thread Modify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}\/modify",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "5819e32a1e856ef9523859e7bd8fee25",
+            "name": "Post User Thread Modify",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}\/modify",
+            "description": "Modifies the labels applied to the thread. This applies to all messages in the thread.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1b444c9b9010d928d0f7f58e06a7fce7",
+            "name": "Parameters User Thread Trash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}\/trash",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "14cb48ef21e6211031cd8779f0c33d19",
+            "name": "Post User Thread Trash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}\/trash",
+            "description": "Moves the specified thread to the trash.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "adf235eaf401e4bbff06a5b2d669d710",
+            "name": "Parameters User Thread Untrash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}\/untrash",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1006c2be4ab5d78fbd21f9bb9e26f6a3",
+            "name": "Post User Thread Untrash",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/threads\/{id}\/untrash",
+            "description": "Removes the specified thread from the trash.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The ID of the draft to delete.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "6063c0683ccd33eedd12063abae5b61d",
+            "name": "Parameters User Watch",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/watch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "parameters",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        },
+        {
+            "id": "058599775db9e77daaa6cd74bbe4e549",
+            "name": "Post User Watch",
+            "url": "http:\/\/gmail.com\/gmail\/v1\/users\/{userId}\/watch",
+            "description": "Set up or update a push notification watch on the given user mailbox.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userId",
+                    "description": "The user's email address. The special value me can be used to indicate the authenticated user.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e57e4c1a6b3f6c46885104379cd0b6c7",
+            "rawModeData": ""
+        }
+    ]
+}
