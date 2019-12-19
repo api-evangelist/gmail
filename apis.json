@@ -1,0 +1,102 @@
+{
+    "name": "Gmail",
+    "description": "<p>The Gmail API is a RESTful API that can be used to access Gmail mailboxes and send mail. For most web applications (including mobile apps), the Gmail API is the best choice for authorized access to a user's Gmail data.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/gmail-icon.png",
+    "tags": [
+        "api provider",
+        "emails",
+        "have api",
+        "have swagger",
+        "productivity",
+        "relative data",
+        "service api",
+        "streams"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/gmail\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Gmail",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/gmail-icon.png",
+            "humanURL": "http:\/\/gmail.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/gmail-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/gmail-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/gmail.com"
+        },
+        {
+            "type": "Auth Scopes",
+            "url": "https:\/\/developers.google.com\/gmail\/api\/auth\/scopes"
+        },
+        {
+            "type": "Authentication",
+            "url": "https:\/\/developers.google.com\/gmail\/api\/auth\/about-auth"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/developers.google.com\/gmail\/api\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/developers.google.com\/gmail\/api\/v1\/reference\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-29-06.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-30-11.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-31-25.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-32-33.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-33-28.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-35-22.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-39-30.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/23362-2019-11-23-19-41-50.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/gmail"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.google.com\/gmail\/"
+        }
+    ]
+}
