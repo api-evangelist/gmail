@@ -1,0 +1,32 @@
+aid: gmail
+name: Gmail
+description: "Flexible, RESTful access to the user's inbox"
+url: https://developers.google.com/gmail/api/
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Business"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Business
+  - Public APIs
+apis:
+  - name: Gmail
+    description: "Flexible, RESTful access to the user's inbox"
+    humanURL: https://developers.google.com/gmail/api/
+    baseURL: https://developers.google.com/gmail/api/
+    tags:
+      - Business
+    properties:
+      - type: Documentation
+        url: https://developers.google.com/gmail/api/
+common:
+  - type: Website
+    url: https://developers.google.com/gmail/api/
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
