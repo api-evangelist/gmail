@@ -23,6 +23,10 @@ apis:
       - type: Documentation
         url: https://developers.google.com/gmail/api/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/gmail-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/gmail-domain-security.yml
   - type: Website
     url: https://developers.google.com/gmail/api/
   - type: PublicAPIsListing
