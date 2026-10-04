@@ -39,7 +39,6 @@ apis:
   - name: Gmail
     description: "Flexible, RESTful access to the user's inbox"
     humanURL: https://developers.google.com/gmail/api/
-    baseURL: https://developers.google.com/gmail/api/
     tags:
       - Business
     properties:
