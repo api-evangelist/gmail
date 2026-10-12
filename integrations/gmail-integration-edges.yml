@@ -1,0 +1,1087 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/gmail/integrations
+- https://n8n.io/integrations/gmail/
+- https://composio.dev/toolkits/gmail
+checked:
+- https://composio.dev/toolkits/gmail
+- https://monid.ai/tools/gmail
+- https://n8n.io/integrations/gmail/
+- https://zapier.com/apps/gmail/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: gmail
+  url: https://zapier.com/apps/gmail/integrations
+  external_url: https://mail.google.com/
+  partner_tier: PLATINUM
+  triggers:
+  - key: attachment
+    label: New Attachment
+  - key: label
+    label: New Label
+  - key: labeled_conversation
+    label: New Labeled Conversation
+  - key: label_message_v2
+    label: New Labeled Email
+  - key: message
+    label: New Email
+  - key: search
+    label: New Email Matching Search
+  - key: star_message
+    label: New Starred Email
+  - key: thread_v2
+    label: New Conversation
+  actions:
+  - key: add_label
+    label: Add Label to Email
+  - key: archive_email
+    label: Archive Email
+  - key: delete_email
+    label: Delete Email
+  - key: draft_v2
+    label: Create Draft
+  - key: draft_v2_reply
+    label: Create Draft Reply
+  - key: forward_email
+    label: Forward Email
+  - key: get_conversation
+    label: Get Conversation
+  - key: label
+    label: Create Label
+  - key: message
+    label: Send Email
+  - key: remove_label
+    label: Remove Label From Email
+  - key: remove_thread_label
+    label: Remove Label From Conversation
+  - key: reply_to_message
+    label: Reply to Email
+  searches:
+  - key: attachment
+    label: Get Attachment by Filename
+  - key: message
+    label: Find Email
+- marketplace: n8n
+  channel: open-source-node
+  app: gmail
+  url: https://n8n.io/integrations/gmail/
+  identity: title
+  pair_pages: 506
+  pairs:
+  - gocanvas
+  - godaddy
+  - gong
+  - google-ads
+  - google-ai-studio-gemini
+  - google-analytics
+  - google-bigquery
+  - google-books
+  - google-business-profile
+  - google-calendar
+  - google-chat
+  - google-cloud
+  - google-cloud-firestore
+  - google-cloud-natural-language
+  - google-cloud-realtime-database
+  - google-cloud-storage
+  - google-contacts
+  - google-docs
+  - google-drive
+  - google-forms
+  - google-gemini-chat-model
+  - google-perspective
+  - google-sheets
+  - google-slides
+  - google-tables
+  - google-tasks
+  - google-translate
+  - google-vertex-ai
+  - google-workspace-admin
+  - gotify
+  - gotowebinar
+  - gptea
+  - grafana
+  - grain
+  - graphql
+  - gravity-forms
+  - grid
+  - grist
+  - growbots
+  - gumroad
+  - gupshup
+  - guru
+  - hacker-news
+  - halopsa
+  - handwrytten
+  - hansei
+  - harry-potter-api
+  - harvest
+  - headless-testing
+  - helcim
+  - helpscout
+  - heysummit
+  - highlevel
+  - home-assistant
+  - http-request
+  - hub-planner
+  - hubspot
+  - hugging-face
+  - humantic-ai
+  - hunter
+  - hybrid-analysis
+  - iauditor-by-safetyculture
+  - idealpostcodes
+  - idealspot
+  - ideta
+  - imgbb
+  - imgur
+  - imperva-waf
+  - impira
+  - industryselect
+  - influxdb-cloud
+  - infolobby
+  - instabot
+  - instabug
+  - intakeq
+  - intercom
+  - invoice-ninja
+  - invoiced
+  - ip2location
+  - ipinfo
+  - ipregistry
+  - iris-dfir
+  - isn
+  - iterable
+  - jama
+  - jasper
+  - jenkins
+  - jina-ai
+  - jira-software
+  - jwt
+  - kadoa
+  - kafka
+  - kaggle
+  - kanban-tool
+  - karbon
+  - keap
+  - keygen
+  - keyzy
+  - kibana
+  - kitemaker
+  - klaviyo
+  - klazify
+  - knack
+  - knowbe4
+  - kobotoolbox
+  - kraftful
+  - lagrowthmachine
+  - lambdatest
+  - landbot
+  - laposta
+  - launch27
+  - launchdarkly
+  - ldap
+  - leadboxer
+  - leadpops
+  - lemlist
+  - lets-enhance
+  - libraria
+  - lighthouse
+  - lime-go
+  - line
+  - linear
+  - lingvanex
+  - linkedin
+  - linkish
+  - linode
+  - liveagent
+  - localazy
+  - loginradius
+  - lokalise
+  - lonescale
+  - lucidchart
+  - magento-2
+  - mailcheck
+  - mailchimp
+  - mailerlite
+  - mailersend
+  - mailgun
+  - mailify
+  - mailjet
+  - mailmodo
+  - malcore
+  - mandrill
+  - marcom-robot
+  - marketing-master-io
+  - marketplacer
+  - marketstack
+  - mastodon
+  - matrix
+  - mattermost
+  - mautic
+  - mav
+  - maverick
+  - medium
+  - mem
+  - messagebird
+  - metabase
+  - metatextai-inference-api
+  - mews
+  - microsoft-azure-monitor
+  - microsoft-dynamics-365-business-central-api
+  - microsoft-dynamics-crm
+  - microsoft-entra-id
+  - microsoft-entra-id-azure-active-directory
+  - microsoft-excel
+  - microsoft-graph-security
+  - microsoft-onedrive
+  - microsoft-outlook
+  - microsoft-sharepoint
+  - microsoft-sql
+  - microsoft-teams
+  - microsoft-teams-admin
+  - microsoft-to-do
+  - miestro
+  - mindee
+  - miro
+  - misp
+  - missive
+  - mist
+  - mistral-ai
+  - mixpanel
+  - mocean
+  - mondaycom
+  - mongodb
+  - monica-crm
+  - moonclerk
+  - moonmail
+  - morph
+  - mqtt
+  - msg91
+  - mux
+  - mx-toolbox
+  - my-askai
+  - myphoner
+  - mysql
+  - nanonets-ocr
+  - nasa
+  - ncscale
+  - netlify
+  - nextcloud
+  - nightfallai
+  - ninox
+  - nmkr
+  - nocodb
+  - notion
+  - nozbe-teams
+  - npm
+  - nuclia
+  - nusii-proposals
+  - nyckel
+  - nyota
+  - occasion
+  - ocrspace
+  - odoo
+  - offalerts
+  - okta
+  - omeda
+  - omniconvert
+  - omnimind
+  - on2air
+  - one-ai
+  - one-simple-api
+  - onfleet
+  - openai
+  - opencti
+  - openthesaurus
+  - openweathermap
+  - opn-formerly-omise
+  - oracle-database
+  - orbit
+  - order-desk
+  - ortto
+  - oura
+  - paddle
+  - pagerduty
+  - paperform
+  - papyrs
+  - parsehub
+  - parseprompt
+  - passcreator
+  - passslot
+  - patreon
+  - paymo
+  - paypal
+  - peekalink
+  - perplexity
+  - persio
+  - personal-ai
+  - phantombuster
+  - philips-hue
+  - phrase
+  - pinata
+  - pinboard
+  - pinterest
+  - pipedrive
+  - pipefy
+  - pirate-weather
+  - pitchly
+  - pivotal-tracker
+  - planview-leankit
+  - planyo-online-booking
+  - platformly
+  - plecto
+  - plivo
+  - postbin
+  - postgres
+  - posthog
+  - practitest
+  - predisai
+  - prodia
+  - product-hunt
+  - profitwell
+  - project-bubble-proprofs-project
+  - prompthub
+  - prospe-ai
+  - pushbullet
+  - pushcut
+  - pusher
+  - pushover
+  - qradar
+  - qualaroo
+  - qualys
+  - quentn
+  - questdb
+  - quick-base
+  - quickbooks-online
+  - quickchart
+  - quintadb
+  - rabbitmq
+  - radar
+  - raindrop
+  - rapid7-insightvm
+  - raven-tools
+  - rawg-video-games-database
+  - read-ai
+  - realphonevalidation
+  - recharge
+  - recorded-future
+  - redash
+  - reddit
+  - redis
+  - relevance-ai
+  - relink-url-shortener
+  - relysia
+  - replyio
+  - retable
+  - reverse-contact
+  - rewardful
+  - ritekit
+  - roboflow
+  - robolytix
+  - roboresponseai
+  - rocketchat
+  - rollbar
+  - rootly
+  - route4me
+  - rundeck
+  - s3
+  - sales-simplify
+  - salesforce
+  - salesmaa
+  - salesmate
+  - salesmsg
+  - salesrocks
+  - samsung-smartthings
+  - scrape-itcloud
+  - scrapeninja
+  - seamless-ai
+  - search-and-save
+  - seatable
+  - securityscorecard
+  - segment
+  - sekoia
+  - sellix
+  - sembly-ai
+  - sendgrid
+  - sendy
+  - sentryio
+  - servicenow
+  - sharly-ai
+  - shiphero
+  - shipstation
+  - shopify
+  - shortio
+  - shuffler
+  - sierra-interactive
+  - sifter
+  - signaturit
+  - signl4
+  - signrequest
+  - simpleem
+  - simplehash
+  - simplekpi
+  - simplelocalize
+  - simplero
+  - simpletexting
+  - sitecreatorio
+  - sitespeakai
+  - slack
+  - smaily
+  - smartreach
+  - smartsuite
+  - sms-it
+  - sms-magic
+  - sms77
+  - snapdocs
+  - snatchbot
+  - snipcart
+  - snowflake
+  - solve-data
+  - specter
+  - splunk
+  - spondyr
+  - spontit
+  - sportsdata
+  - spotify
+  - spydra
+  - sslmate-cert-spotter-api
+  - stackby
+  - stammerai
+  - starton
+  - statuscake
+  - storyblok
+  - strapi
+  - strava
+  - stripe
+  - studio-by-ai21-labs
+  - suitedash
+  - supabase
+  - supernormal
+  - superpowered
+  - supportivekoala
+  - survicate
+  - swagup
+  - switchboard
+  - syncly
+  - syncromsp
+  - synthesia
+  - taiga
+  - talentlms
+  - talknotes
+  - tapfiliate
+  - td-ameritrade
+  - teachable
+  - team-up
+  - teamdeck
+  - teamgate
+  - teknoir
+  - telegram
+  - testmonitor
+  - textcortex-ai
+  - textgain
+  - textkit
+  - textmagic
+  - thankster
+  - the-customer-factor
+  - the-leap
+  - thehive
+  - thehive-5
+  - thoughtfulgpt
+  - thrivecart
+  - tidb-cloud
+  - tierion
+  - tilda
+  - timescaledb
+  - timetonic
+  - tinyurl
+  - tisane-labs
+  - todoist
+  - token-metrics
+  - toket
+  - totango
+  - trackvia
+  - transifex
+  - travisci
+  - trellix-epo
+  - trello
+  - trengo
+  - trevorio
+  - turbohire
+  - tuskr
+  - tuulio
+  - twake
+  - twilio
+  - twist
+  - twitter
+  - unbounce
+  - unisender
+  - unleashed-software
+  - upkeep
+  - uplead
+  - uproc
+  - uptimerobot
+  - uptimetoolbox
+  - urlscanio
+  - uservoice
+  - venafi-tls-protect-cloud
+  - venafi-tls-protect-datacenter
+  - venly
+  - verifalia
+  - vero
+  - vimeo
+  - virustotal
+  - vivifyscrum
+  - voicit
+  - vonage
+  - vowel
+  - watchsignals
+  - waveline-extract
+  - webex-by-cisco
+  - webflow
+  - webscraperio
+  - wekan
+  - whal3s
+  - whatconverts
+  - whatsapp-business-cloud
+  - wise
+  - wizychat
+  - wonderchat
+  - wondercraft
+  - woocommerce
+  - woodpeckerco
+  - wordpress
+  - workast
+  - workboard
+  - woxo
+  - writesonic
+  - wubook-ratechecker
+  - xero
+  - xtractly
+  - ybug
+  - ycode
+  - yodiz
+  - yourls
+  - youtube
+  - zabbix
+  - zammad
+  - zendesk
+  - zenrows
+  - zoho-books
+  - zoho-crm
+  - zoho-desk
+  - zonka-feedback
+  - zoom
+  - zscaler-zia
+  - zulip
+- marketplace: composio
+  channel: agent-gateway
+  app: gmail
+  url: https://composio.dev/toolkits/gmail
+  identity: action-prefix
+  actions:
+  - key: GMAIL_ADD_LABEL_TO_EMAIL
+  - key: GMAIL_BATCH_DELETE_MESSAGES
+  - key: GMAIL_BATCH_MODIFY_MESSAGES
+  - key: GMAIL_CREATE_EMAIL_DRAFT
+  - key: GMAIL_CREATE_FILTER
+  - key: GMAIL_CREATE_LABEL
+  - key: GMAIL_CREATE_PROMPT_POST
+  - key: GMAIL_DELETE_DRAFT
+  - key: GMAIL_DELETE_FILTER
+  - key: GMAIL_DELETE_LABEL
+  - key: GMAIL_DELETE_MESSAGE
+  - key: GMAIL_DELETE_THREAD
+  - key: GMAIL_EMAIL_SENT_TRIGGER
+  - key: GMAIL_FETCH_EMAILS
+  - key: GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID
+  - key: GMAIL_FETCH_MESSAGE_BY_THREAD_ID
+  - key: GMAIL_FORWARD_MESSAGE
+  - key: GMAIL_GET_ATTACHMENT
+  - key: GMAIL_GET_AUTO_FORWARDING
+  - key: GMAIL_GET_CONTACTS
+  - key: GMAIL_GET_DRAFT
+  - key: GMAIL_GET_FILTER
+  - key: GMAIL_GET_LABEL
+  - key: GMAIL_GET_LANGUAGE_SETTINGS
+  - key: GMAIL_GET_PEOPLE
+  - key: GMAIL_GET_PROFILE
+  - key: GMAIL_GET_VACATION_SETTINGS
+  - key: GMAIL_IMPORT_MESSAGE
+  - key: GMAIL_INSERT_MESSAGE
+  - key: GMAIL_LIST_CSE_IDENTITIES
+  - key: GMAIL_LIST_CSE_KEYPAIRS
+  - key: GMAIL_LIST_DRAFTS
+  - key: GMAIL_LIST_FILTERS
+  - key: GMAIL_LIST_FORWARDING_ADDRESSES
+  - key: GMAIL_LIST_HISTORY
+  - key: GMAIL_LIST_LABELS
+  - key: GMAIL_LIST_SEND_AS
+  - key: GMAIL_LIST_SMIME_INFO
+  - key: GMAIL_LIST_THREADS
+  - key: GMAIL_MODIFY_THREAD_LABELS
+  - key: GMAIL_MOVE_THREAD_TO_TRASH
+  - key: GMAIL_MOVE_TO_TRASH
+  - key: GMAIL_NEW_GMAIL_MESSAGE
+  - key: GMAIL_PATCH_LABEL
+  - key: GMAIL_PATCH_SEND_AS
+  - key: GMAIL_REPLY_TO_THREAD
+  - key: GMAIL_SEARCH_PEOPLE
+  - key: GMAIL_SEND_DRAFT
+  - key: GMAIL_SEND_EMAIL
+  - key: GMAIL_SETTINGS_GET_IMAP
+  - key: GMAIL_SETTINGS_GET_POP
+  - key: GMAIL_SETTINGS_SEND_AS_GET
+  - key: GMAIL_STOP_WATCH
+  - key: GMAIL_UNTRASH_MESSAGE
+  - key: GMAIL_UNTRASH_THREAD
+  - key: GMAIL_UPDATE_DRAFT
+  - key: GMAIL_UPDATE_IMAP_SETTINGS
+  - key: GMAIL_UPDATE_LABEL
+  - key: GMAIL_UPDATE_LANGUAGE_SETTINGS
+  - key: GMAIL_UPDATE_POP_SETTINGS
+  - key: GMAIL_UPDATE_SEND_AS
+  - key: GMAIL_UPDATE_USER_ATTRIBUTES_VALUES
+  - key: GMAIL_UPDATE_VACATION_SETTINGS
+edges:
+- partner_name: Google Forms
+  partner: google-forms
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://google.com/
+- partner_name: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/facebook-lead-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://www.facebook.com/business/ads/lead-ads
+- partner_name: Google Drive
+  partner: google-drive
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-drive
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://www.google.com/drive/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Typeform
+  partner: typeform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/typeform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.typeform.com/signup?utm_medium=referral&utm_source=zapier&utm_campaign=zapier_integration&utm_content=marketplace
+- partner_name: Airtable
+  partner: airtable
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/airtable
+  direction: third-party
+  category: Databases
+  partner_url: https://airtable.com/
+- partner_name: Google Calendar
+  partner: google-calendar
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-calendar
+  direction: third-party
+  category: Calendar
+  partner_url: https://calendar.google.com/
+- partner_name: Slack
+  partner: slack
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/slack
+  direction: third-party
+  category: Team Chat
+  partner_url: https://slack.com/
+- partner_name: WhatsApp Notifications
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/whatsapp-notifications
+  direction: third-party
+  category: Communication
+  partner_url: null
+- partner_name: Notion
+  partner: notion
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/notion
+  direction: third-party
+  category: Task Management
+  partner_url: https://www.notion.so/
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Asana
+  partner: asana
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/asana
+  direction: third-party
+  category: Project Management
+  partner_url: http://asana.com/
+- partner_name: Tally
+  partner: tally
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/tally
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://try.tally.so/zapier
+- partner_name: monday.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/monday
+  direction: third-party
+  category: Project Management
+  partner_url: https://monday.com/
+- partner_name: Google AI Studio (Gemini)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-ai-studio
+  direction: third-party
+  category: AI Models
+  partner_url: https://developers.generativeai.google/products/makersuite
+- partner_name: Trello
+  partner: trello
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/trello
+  direction: third-party
+  category: Project Management
+  partner_url: https://trello.com/
+- partner_name: ChatGPT (OpenAI)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/chatgpt
+  direction: third-party
+  category: AI Assistants
+  partner_url: https://chat.openai.com/chat
+- partner_name: Google Docs
+  partner: google-docs
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-docs
+  direction: third-party
+  category: Documents
+  partner_url: http://google.com/
+- partner_name: Google Ads
+  partner: google-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://ads.google.com/
+- partner_name: ClickUp
+  partner: clickup
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/clickup
+  direction: third-party
+  category: Project Management
+  partner_url: https://clickup.com/zapier
+- partner_name: Zapier Chatbots
+  partner: zapier
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/zapier-chatbots
+  direction: third-party
+  category: AI Chatbots
+  partner_url: https://zapier.com/blog/create-custom-ai-chatbots-with-interfaces/
+- partner_name: Telegram
+  partner: telegram
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/telegram
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://telegram.org/
+- partner_name: Pipedrive
+  partner: pipedrive
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/pipedrive
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://pipedrive.com/
+- partner_name: Jotform
+  partner: jotform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/jotform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://www.jotform.com/
+- partner_name: Calendly
+  partner: calendly
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/calendly
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://calendly.com/?utm_medium=partner&utm_source=zapier&utm_campaign=main_partner_page&utm_content=main_inbound_link
+- partner_name: Shopify
+  partner: shopify
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/shopify
+  direction: third-party
+  category: eCommerce
+  partner_url: https://www.shopify.com/
+- partner_name: Squarespace Forms
+  partner: squarespace
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/squarespace-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.squarespace.com/
+- partner_name: LeadConnector
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/leadconnector
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.leadconnectorhq.com/
+- partner_name: Dropbox
+  partner: dropbox
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/dropbox
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://dropbox.com/
+- partner_name: Gravity Forms
+  partner: gravity-forms
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/gravity-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.gravityforms.com/?utm_campaign=partners&utm_source=zapier-listing-learn-more&utm_medium=free-placement
+- partner_name: front
+  partner: front
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/front/blob/main/openapi/front-events-api-openapi.yml
+  contract_reference:
+    repo: front
+    spec_file: front-events-api-openapi.yml
+    value: gmail
+    property: source._meta
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+- partner_name: zoho
+  partner: zoho
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/zoho/blob/main/openapi/zoho-timeline-api-openapi.yml
+  contract_reference:
+    repo: zoho
+    spec_file: zoho-timeline-api-openapi.yml
+    value: gmail
+    property: __timeline.source
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+- partner_name: zoho-crm
+  partner: zoho-crm
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/zoho-crm/blob/main/openapi/zoho-crm-timeline-api-openapi.yml
+  contract_reference:
+    repo: zoho-crm
+    spec_file: zoho-crm-timeline-api-openapi.yml
+    value: gmail
+    property: __timeline.source
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates:
+- title: Save new Gmail emails matching certain traits to a Google Spreadsheet
+  url: https://zapier.com/apps/gmail/integrations/google-sheets/2618/save-new-gmail-emails-matching-certain-traits-to-a-google-spreadsheet
+  apps:
+  - gmail
+  - google-sheets
+- title: Save new Gmail attachments to Google Drive
+  url: https://zapier.com/apps/gmail/integrations/google-drive/192/save-new-gmail-attachments-to-google-drive
+  apps:
+  - gmail
+  - filter
+  - google-drive
+- title: Get email notifications or send follow-ups to new Typeform respondents
+  url: https://zapier.com/apps/gmail/integrations/typeform/114/get-email-notifications-or-send-follow-ups-to-new-typeform-respondents
+  apps:
+  - typeform
+  - gmail
+- title: Send emails via Gmail when Google Sheets rows are updated
+  url: https://zapier.com/apps/gmail/integrations/google-sheets/144/send-emails-via-gmail-when-google-sheets-rows-are-updated
+  apps:
+  - google-sheets
+  - gmail
+- title: Add new Gmail attachments to Google Drive
+  url: https://zapier.com/apps/gmail/integrations/google-drive/761/add-new-gmail-attachments-to-google-drive
+  apps:
+  - gmail
+  - google-drive
+- title: Send email via Gmail for new Google Forms submissions
+  url: https://zapier.com/apps/gmail/integrations/google-forms/11008/send-email-via-gmail-for-new-google-forms-submissions
+  apps:
+  - google-forms
+  - gmail
+- title: Send new Gmail emails as Slack channel messages
+  url: https://zapier.com/apps/gmail/integrations/slack/48/send-new-gmail-emails-as-slack-channel-messages
+  apps:
+  - gmail
+  - slack
+- title: Send emails via Gmail for new Google Ads leads
+  url: https://zapier.com/apps/gmail/integrations/google-ads/534416/send-emails-via-gmail-for-new-google-ads-leads
+  apps:
+  - google-ads
+  - gmail
+- title: Save new attachments from labeled emails in Gmail to Google Drive
+  url: https://zapier.com/apps/gmail/integrations/google-drive/9245/save-new-attachments-from-labeled-emails-in-gmail-to-google-drive
+  apps:
+  - gmail
+  - google-drive
+- title: Get an email reminder in Gmail 1 hour before a new Google Calendar event starts
+  url: https://zapier.com/apps/gmail/integrations/google-calendar/366/get-an-email-reminder-in-gmail-1-hour-before-a-new-google-calendar-event-starts
+  apps:
+  - google-calendar
+  - gmail
+- title: Send emails in Gmail for new form submissions created in Zapier Forms
+  url: https://zapier.com/apps/gmail/integrations/zapier-forms/1225969/send-emails-in-gmail-for-new-form-submissions-created-in-zapier-forms
+  apps:
+  - zapier-forms
+  - gmail
+- title: Send daily emails with Gmail
+  url: https://zapier.com/apps/gmail/integrations/schedule/2809/send-daily-emails-with-gmail
+  apps:
+  - schedule
+  - gmail
+template_total: 11700
