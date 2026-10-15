@@ -491,7 +491,7 @@
     app_slug: gmail
     beta: false
     builder: unknown (not in the directory record)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: gmail-n8n
   label: n8n
@@ -519,7 +519,7 @@
     other_nodes:
     - Google/Gmail/v1
     - Google/Gmail/v2
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: gmail-pipedream
   label: Pipedream
@@ -545,5 +545,5 @@
     actions: true
     sources: true
     builder: Pipedream repo (component)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
