@@ -15,6 +15,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-sheets/2618/save-new-gmail-emails-matching-certain-traits-to-a-google-spreadsheet
   template: https://zapier.com/apps/gmail/integrations/google-sheets/2618/save-new-gmail-emails-matching-certain-traits-to-a-google-spreadsheet
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-save-new-gmail-attachments-to-google-drive
@@ -29,6 +30,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-drive/192/save-new-gmail-attachments-to-google-drive
   template: https://zapier.com/apps/gmail/integrations/google-drive/192/save-new-gmail-attachments-to-google-drive
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-get-email-notifications-or-send-follow-ups-to-new-typeform-respondents
@@ -43,6 +45,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/typeform/114/get-email-notifications-or-send-follow-ups-to-new-typeform-respondents
   template: https://zapier.com/apps/gmail/integrations/typeform/114/get-email-notifications-or-send-follow-ups-to-new-typeform-respondents
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-send-emails-via-gmail-when-google-sheets-rows-are-updated
@@ -57,6 +60,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-sheets/144/send-emails-via-gmail-when-google-sheets-rows-are-updated
   template: https://zapier.com/apps/gmail/integrations/google-sheets/144/send-emails-via-gmail-when-google-sheets-rows-are-updated
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-add-new-gmail-attachments-to-google-drive
@@ -71,6 +75,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-drive/761/add-new-gmail-attachments-to-google-drive
   template: https://zapier.com/apps/gmail/integrations/google-drive/761/add-new-gmail-attachments-to-google-drive
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-send-email-via-gmail-for-new-google-forms-submissions
@@ -85,6 +90,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-forms/11008/send-email-via-gmail-for-new-google-forms-submissions
   template: https://zapier.com/apps/gmail/integrations/google-forms/11008/send-email-via-gmail-for-new-google-forms-submissions
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-send-new-gmail-emails-as-slack-channel-messages
@@ -99,6 +105,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/slack/48/send-new-gmail-emails-as-slack-channel-messages
   template: https://zapier.com/apps/gmail/integrations/slack/48/send-new-gmail-emails-as-slack-channel-messages
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-send-emails-via-gmail-for-new-google-ads-leads
@@ -113,6 +120,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-ads/534416/send-emails-via-gmail-for-new-google-ads-leads
   template: https://zapier.com/apps/gmail/integrations/google-ads/534416/send-emails-via-gmail-for-new-google-ads-leads
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-save-new-attachments-from-labeled-emails-in-gmail-to-google-drive
@@ -127,6 +135,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-drive/9245/save-new-attachments-from-labeled-emails-in-gmail-to-google-drive
   template: https://zapier.com/apps/gmail/integrations/google-drive/9245/save-new-attachments-from-labeled-emails-in-gmail-to-google-drive
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-get-an-email-reminder-in-gmail-1-hour-before-a-new-google-calendar-event-starts
@@ -141,277 +150,7 @@
   evidence: https://zapier.com/apps/gmail/integrations/google-calendar/366/get-an-email-reminder-in-gmail-1-hour-before-a-new-google-calendar-event-starts
   template: https://zapier.com/apps/gmail/integrations/google-calendar/366/get-an-email-reminder-in-gmail-1-hour-before-a-new-google-calendar-event-starts
   source: template
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-facebook-lead-ads
-  label: Facebook Lead Ads
-  partner: facebook-lead-ads
-  partner_name: Facebook Lead Ads
-  category: Ads & Conversion
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/facebook-lead-ads
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-airtable
-  label: Airtable
-  partner: airtable
-  partner_name: Airtable
-  category: Databases
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/airtable
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-whatsapp-notifications
-  label: WhatsApp Notifications
-  partner_name: WhatsApp Notifications
-  category: Communication
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/whatsapp-notifications
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-notion
-  label: Notion
-  partner: notion
-  partner_name: Notion
-  category: Task Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/notion
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-hubspot
-  label: HubSpot
-  partner: hubspot
-  partner_name: HubSpot
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/hubspot
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-asana
-  label: Asana
-  partner: asana
-  partner_name: Asana
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/asana
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-tally
-  label: Tally
-  partner: tally
-  partner_name: Tally
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/tally
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-monday-com
-  label: monday.com
-  partner_name: monday.com
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/monday
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-google-ai-studio-gemini
-  label: Google AI Studio (Gemini)
-  partner_name: Google AI Studio (Gemini)
-  category: AI Models
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/google-ai-studio
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-trello
-  label: Trello
-  partner: trello
-  partner_name: Trello
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/trello
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-chatgpt-openai
-  label: ChatGPT (OpenAI)
-  partner_name: ChatGPT (OpenAI)
-  category: AI Assistants
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/chatgpt
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-google-docs
-  label: Google Docs
-  partner: google-docs
-  partner_name: Google Docs
-  category: Documents
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/google-docs
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-clickup
-  label: ClickUp
-  partner: clickup
-  partner_name: ClickUp
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/clickup
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-zapier-chatbots
-  label: Zapier Chatbots
-  partner: zapier
-  partner_name: Zapier Chatbots
-  category: AI Chatbots
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/zapier-chatbots
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-telegram
-  label: Telegram
-  partner: telegram
-  partner_name: Telegram
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/telegram
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-pipedrive
-  label: Pipedrive
-  partner: pipedrive
-  partner_name: Pipedrive
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/pipedrive
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-jotform
-  label: Jotform
-  partner: jotform
-  partner_name: Jotform
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/jotform
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-calendly
-  label: Calendly
-  partner: calendly
-  partner_name: Calendly
-  category: Scheduling & Booking
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/calendly
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-shopify
-  label: Shopify
-  partner: shopify
-  partner_name: Shopify
-  category: eCommerce
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/shopify
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-squarespace-forms
-  label: Squarespace Forms
-  partner: squarespace
-  partner_name: Squarespace Forms
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/squarespace-forms
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-leadconnector
-  label: LeadConnector
-  partner_name: LeadConnector
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/leadconnector
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-dropbox
-  label: Dropbox
-  partner: dropbox
-  partner_name: Dropbox
-  category: File Management & Storage
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/dropbox
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: gmail-gravity-forms
-  label: Gravity Forms
-  partner: gravity-forms
-  partner_name: Gravity Forms
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/gmail/integrations/gravity-forms
-  source: edge
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: gmail-front
@@ -638,4 +377,300 @@
     sources: true
     builder: Pipedream repo (component)
   status: not-a-workflow
+  arazzo: null
+- slug: gmail-facebook-lead-ads
+  label: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_name: Facebook Lead Ads
+  category: Ads & Conversion
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/facebook-lead-ads
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-airtable
+  label: Airtable
+  partner: airtable
+  partner_name: Airtable
+  category: Databases
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/airtable
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-whatsapp-notifications
+  label: WhatsApp Notifications
+  partner_name: WhatsApp Notifications
+  category: Communication
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/whatsapp-notifications
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-notion
+  label: Notion
+  partner: notion
+  partner_name: Notion
+  category: Task Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/notion
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-hubspot
+  label: HubSpot
+  partner: hubspot
+  partner_name: HubSpot
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/hubspot
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-asana
+  label: Asana
+  partner: asana
+  partner_name: Asana
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/asana
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-tally
+  label: Tally
+  partner: tally
+  partner_name: Tally
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/tally
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-monday-com
+  label: monday.com
+  partner: monday-com
+  partner_name: monday.com
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/monday
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-google-ai-studio-gemini
+  label: Google AI Studio (Gemini)
+  partner_name: Google AI Studio (Gemini)
+  category: AI Models
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-ai-studio
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-trello
+  label: Trello
+  partner: trello
+  partner_name: Trello
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/trello
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-chatgpt-openai
+  label: ChatGPT (OpenAI)
+  partner: openai
+  partner_name: ChatGPT (OpenAI)
+  category: AI Assistants
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/chatgpt
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-google-docs
+  label: Google Docs
+  partner: google-docs
+  partner_name: Google Docs
+  category: Documents
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/google-docs
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-zapier-chatbots
+  label: Zapier Chatbots
+  partner: zapier
+  partner_name: Zapier Chatbots
+  category: AI Chatbots
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/zapier-chatbots
+  source: edge
+  relationship: ipaas-bridge
+  status: not-a-workflow
+  arazzo: null
+- slug: gmail-clickup
+  label: ClickUp
+  partner: clickup
+  partner_name: ClickUp
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/clickup
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-telegram
+  label: Telegram
+  partner: telegram
+  partner_name: Telegram
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/telegram
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-jotform
+  label: Jotform
+  partner: jotform
+  partner_name: Jotform
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/jotform
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-calendly
+  label: Calendly
+  partner: calendly
+  partner_name: Calendly
+  category: Scheduling & Booking
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/calendly
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-shopify
+  label: Shopify
+  partner: shopify
+  partner_name: Shopify
+  category: eCommerce
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/shopify
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-squarespace-forms
+  label: Squarespace Forms
+  partner: squarespace
+  partner_name: Squarespace Forms
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/squarespace-forms
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-leadconnector
+  label: LeadConnector
+  partner_name: LeadConnector
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/leadconnector
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-dropbox
+  label: Dropbox
+  partner: dropbox
+  partner_name: Dropbox
+  category: File Management & Storage
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/dropbox
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-gravity-forms
+  label: Gravity Forms
+  partner: gravity-forms
+  partner_name: Gravity Forms
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/gravity-forms
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: gmail-linkedin-ads
+  label: LinkedIn Ads
+  partner: linkedin-ads
+  partner_name: LinkedIn Ads
+  category: Ads & Conversion
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/gmail/integrations/linkedin-ads
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
   arazzo: null
